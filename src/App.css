@@ -50,8 +50,8 @@ header{
 
 #carrossel {
   margin: 0 auto;
-  width: 420px;
-  height: 420px;
+  width: 320px;
+  height: 320px;
   overflow: hidden;
   display: flex;
 }
@@ -64,8 +64,8 @@ header{
 }
 
 .imgCarrossel {
-  width: 420px;
-  height: 420px;
+  width: 320px;
+  height: 320px;
   border-radius: 10px;
   flex-shrink: 0;
 }
@@ -146,7 +146,7 @@ header{
 
 @keyframes slide {
   0%   { transform: translateX(0); }
-  33%  { transform: translateX(-420px); }
-  66%  { transform: translateX(-840px); }
+  33%  { transform: translateX(-320px); }
+  66%  { transform: translateX(-640px); }
   100% { transform: translateX(0); }
 }

@@ -36,7 +36,7 @@ function Carrossel() {
           <div
             className="track"
             style={{
-              transform: `translateX(${-index * 420}px)`,
+              transform: `translateX(${-index * 320}px)`,
             }}
           >
             {imagens.map((img, i) => (
