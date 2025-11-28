@@ -5,38 +5,148 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  border-radius: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+button:hover {
+  border-color: #646cff;
 }
 
-.card {
-  padding: 2em;
+#homenagem{
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
 }
 
-.read-the-docs {
-  color: #888;
+header{
+  padding: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.principalimg{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+#carrossel {
+  margin: 0 auto;
+  width: 420px;
+  height: 420px;
+  overflow: hidden;
+  display: flex;
+}
+
+.track {
+  display: flex;
+  width: max-content;
+  /*animation: slide 12s infinite ease-in-out;*/
+  transition: transform 0.7s ease;
+}
+
+.imgCarrossel {
+  width: 420px;
+  height: 420px;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+
+.texto{
+  width: 320px;
+  text-align: center;
+}
+
+
+
+.txt1, .txt2, .txt3, .txt4, .txt5, .txt6 {
+  position: absolute;
+  z-index: 20;
+  font-size: 18px;
+  color: #1A4DA3; /* azul bonito */
+  font-weight: bold;
+  opacity: 0.9;
+  animation: flutuar 3s ease-in-out infinite;
+}
+
+/* posições ajustadas para NÃO sobrepor o centro da foto */
+.txt1 {
+  top: 6%;
+  left: 6%;
+  transform: rotate(-4deg);
+}
+
+.txt2 {
+  top: 6%;
+  right: 6%;
+  transform: rotate(3deg);
+}
+
+.txt3 {
+  top: 22%;
+  left: 5%;
+  transform: rotate(-2deg);
+}
+
+.txt4 {
+  top: 22%;
+  right: 5%;
+  width: 200px;
+  transform: rotate(2deg);
+}
+
+.txt5 {
+  bottom: 18%;
+  left: 6%;
+  transform: rotate(-3deg);
+}
+
+.txt6 {
+  bottom: 18%;
+  right: 6%;
+  transform: rotate(4deg);
+}
+
+
+
+
+@keyframes flutuar {
+  0%   { transform: translateY(0) rotate(0deg); }
+  50%  { transform: translateY(-4px) rotate(2deg); }
+  100% { transform: translateY(0) rotate(0deg); }
+}
+
+.txt1, .txt2, .txt3, .txt4, .txt5, .txt6 {
+  opacity: 0.9;
+
+  animation: flutuar 3s ease-in-out infinite;
+}
+
+
+
+
+@keyframes slide {
+  0%   { transform: translateX(0); }
+  33%  { transform: translateX(-420px); }
+  66%  { transform: translateX(-840px); }
+  100% { transform: translateX(0); }
 }
