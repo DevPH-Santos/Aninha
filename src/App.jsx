@@ -72,7 +72,7 @@ function App() {
 
         <div className="texto">
           <h3>Oiii aninhaa,</h3>
-          <p>Hoje no busão eu falei besteira. Dizer que você “não é minha amiga de verdade” não faz sentido nenhum, ainda mais porque a gente vive rindo e conversando. <br /> Você claramente é minha amiga sim.
+          <p>Ontem no busão eu falei besteira. Dizer que você “não é minha amiga de verdade” não faz sentido nenhum, ainda mais porque a gente vive rindo e conversando. <br /> Você claramente é minha amiga sim.
             Falei sem pensar, e não queria ter te magoado.
             Por isso fiz esse site: pra deixar claro o quanto eu gosto da nossa amizade e o quanto você significa pra mim💙💙.
             <br /><br />Desculpa de verdade, Aninha.</p>
