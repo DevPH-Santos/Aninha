@@ -108,21 +108,21 @@ header{
 }
 
 .txt4 {
-  top: 22%;
+  top: 45%;
   right: 5%;
   width: 200px;
   transform: rotate(2deg);
 }
 
 .txt5 {
-  bottom: 18%;
+  bottom: 53%;
   left: 6%;
   transform: rotate(-3deg);
 }
 
 .txt6 {
-  bottom: 18%;
-  right: 6%;
+  bottom: 1%;
+  right: 25%;
   transform: rotate(4deg);
 }
 
